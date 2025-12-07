@@ -1,0 +1,48 @@
+### Get all books
+GET http://127.0.0.1:8000/api/books/
+
+### Creates a book
+POST http://127.0.0.1:8000/api/books/
+Content-Type: application/json
+
+{
+  "isbn": "12345",
+  "title": "Sample Book",
+  "author": "Author Name",
+  "category": "Fiction",
+  "status": "available",
+  "total_copies": 3,
+  "available_copies": 3
+}
+
+### Getting available books
+GET http://127.0.0.1:8000/api/books/available/
+
+### Create member
+POST http://127.0.0.1:8000/api/members/
+Content-Type: application/json
+
+{
+  "name": "Babitha",
+  "email": "babithaanguluri@gmail.com",
+  "membership_number": "M001",
+  "status": "active"
+}
+
+### Borrow book
+POST http://127.0.0.1:8000/api/transactions/borrow/
+Content-Type: application/json
+
+{
+  "book": 1,
+  "member": 1
+}
+
+### Return book
+POST http://127.0.0.1:8000/api/transactions/1/return_book/
+
+### Get overdue items
+GET http://127.0.0.1:8000/api/transactions/overdue/
+
+### Pay fine
+POST http://127.0.0.1:8000/api/fines/1/pay/
