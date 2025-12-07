@@ -5,7 +5,7 @@ This application implements *state machines, **business rules, and **database re
 
 ---
 
-# 1️⃣ Project Overview
+# 1️ Project Overview
 
 This API supports:
 
@@ -20,7 +20,7 @@ The backend ensures correct state transitions and enforces all library rules.
 
 ---
 
-# 2️⃣ Setup Instructions
+# 2️ Setup Instructions
 
 Follow the steps below to run the project:
 
